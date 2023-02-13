@@ -9,7 +9,36 @@
 </head>
 <body>
     <header class="mt-12">
-        <h1 class="text-center text-zinc-700 text-5xl font-medium">Let's get some <span class="text-green-300">mooooney</span>!!!</h1>
+        <h1 class="text-center text-zinc-600 text-5xl font-medium">Let's get some <span class="text-emerald-500">Mooooney</span>!!!</h1>
     </header>
+    <main>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-10/12 mx-auto mt-12 text-center font-medium text-white">
+            <div class="bg-emerald-500 p-8 rounded-md text-3xl shadow-lg shadow-indigo-500/40"> 
+                <h1>Deposite</h1>
+                <h2>$<span id="current-deposite">00</span></h2>
+            </div>
+            <div  class="bg-rose-400 p-8 rounded-md text-3xl shadow-lg shadow-indigo-500/40">
+                <h1>Withdrow</h1>
+                <h2>$00</h2>
+            </div>
+            <div class="bg-green-400 p-8 rounded-md text-3xl shadow-lg shadow-indigo-500/40">
+                <h1>Balance</h1>
+                <h2>$1240</h2>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-10/12 mx-auto mt-12 font-medium text-white">
+           <div class="bg-emerald-400 hover:bg-emerald-600 p-8 rounded-md text-3xl shadow-lg shadow-indigo-500/40">
+            <h1>Please Deposite</h1>
+            <input  class="block w-full md:w-9/12 mb-4 mt-4 p-2 px-5 rounded-md bg-zinc-300 focus:bg-gray-500 focus:outline-none focus:border-green-500 focus:text-green-400 focus:ring-green-500 focus:ring-1" placeholder="Enter Your Amount" type="text" id="deposite-amount">
+           <button id="deposite-btn" class="bg-zinc-300 py-2 px-5 rounded-md text-green-400 text-2xl font-medium hover:bg-gray-500">Deposite</button>
+           </div>
+           <div class="bg-teal-400 hover:bg-teal-500 p-8 rounded-md text-3xl shadow-lg shadow-indigo-500/40">
+            <h1>Please Withdrow</h1>
+            <input  class="block w-full md:w-9/12 mb-4 mt-4 p-2 px-5 rounded-md bg-zinc-300 focus:bg-gray-500 focus:outline-none focus:border-green-600 focus:text-green-400 focus:ring-green-500 focus:ring-1" placeholder="Enter Your Amount" type="text" id="withdrow-amount">
+           <button id="withdrow-btn" class="bg-zinc-300 py-2 px-5 rounded-md text-green-400 text-2xl font-medium hover:bg-gray-500">Withdrow</button>
+           </div>
+        </div>
+    </main>
+    <script src="./js/deposite.js"></script>
 </body>
 </html>
