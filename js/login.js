@@ -4,5 +4,5 @@ const password =document.getElementById('user-pass').value;
 if(email=='sh@gmail.com' && password=='2242'){
     window.location.href ='bank.html';
 }
-else{console.log('invalid user');}
+else{alert('invalid user name or password')}
 })
